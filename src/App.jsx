@@ -7,7 +7,7 @@ import Hero from './Components/Hero';
 import Features from './Components/Features';
 import Form from './Components/Form';
 import Footer from './Components/Footer';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes, Router } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +15,7 @@ function App() {
   return (
     <HashRouter>
       <Nabvar />
+      <Router basename="/Demo4"></Router>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/form" element={<Form />} />
