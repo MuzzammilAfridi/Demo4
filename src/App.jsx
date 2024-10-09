@@ -13,15 +13,18 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
+    <>
+    {/* <Router basename="/Demo4"></Router> */}
     <HashRouter>
       <Nabvar />
-      <Router basename="/Demo4"></Router>
+      
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/form" element={<Form />} />
       </Routes>
       <Footer />
     </HashRouter>
+    </>
   );
 }
 
